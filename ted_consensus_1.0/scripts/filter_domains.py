@@ -28,7 +28,7 @@ def main():
                 # chainsaw has added a "time taken" column
                 target, md5, nres, ndom, chopping, score, _time = line.split()
             else:
-                raise RuntimeError(f"unexpected columns (got {len(cols) expected 6 or 7})")
+                raise RuntimeError(f"unexpected columns (got {len(cols)} columns, expected 6 or 7)")
             
             if target == 'chain_id':
                 continue
