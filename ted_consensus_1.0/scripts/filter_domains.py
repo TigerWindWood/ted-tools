@@ -21,7 +21,15 @@ def main():
         for i, line in enumerate(f):
             line = line.rstrip('\n')
 
-            target, md5, nres, ndom, chopping, score = line.split()
+            cols = line.split()
+            if len(cols) == 6:
+                target, md5, nres, ndom, chopping, score = line.split()
+            elif len(cols) == 7:
+                # chainsaw has added a "time taken" column
+                target, md5, nres, ndom, chopping, score, _time = line.split()
+            else:
+                raise RuntimeError(f"unexpected columns (got {len(cols)} columns, expected 6 or 7)")
+            
             if target == 'chain_id':
                 continue
 
