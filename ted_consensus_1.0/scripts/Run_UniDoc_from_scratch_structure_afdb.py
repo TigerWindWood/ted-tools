@@ -74,29 +74,35 @@ def main():
                 if_exist = os.path.exists(pdb_path_chopped)
                 if if_exist and not is_empty:
                     pdb = pdb_path_chopped
-            else:
-                pdb_path_chopped = None
             
-            try:
-                # Run secondary structure calculation with STRIDE
-                subprocess.check_output(f"{STRIDE} {pdb} -r{args.chain} > {pdb_ss} 2> /dev/null", shell=True)
+                try:
+                    # Run secondary structure calculation with STRIDE
+                    subprocess.check_output(f"{STRIDE} {pdb} -r{args.chain} > {pdb_ss} 2> /dev/null", shell=True)
                 
-                # Run UniDoc
-                output = subprocess.check_output(f"{UNIDOC} {pdb} {args.chain} {pdb_ss}", shell=True)
+                    # Run UniDoc
+                    output = subprocess.check_output(f"{UNIDOC} {pdb} {args.chain} {pdb_ss}", shell=True)
                 
-                # Format the output
-                output = str(output, 'utf-8').replace('~','-').replace(',','_').replace('/',',').rstrip('\n')
+                    # Format the output
+                    output = str(output, 'utf-8').replace('~','-').replace(',','_').replace('/',',').rstrip('\n')
 
-                domains = output.split(',')
-                ndoms = len(domains)
-                chopping = ','.join(natsorted(domains))
+                    domains = output.split(',')
+                    ndoms = len(domains)
+                    chopping = ','.join(natsorted(domains))
                 
-                if chopping == '':
-                    chopping = "NULL"
+                    if chopping == '':
+                        chopping = "NULL"
+                        ndoms = 0
+                
+                except:
+                    pdb_ss = None
+                    pdb_path_chopped = None
+                    chopping = 'NO_SS'
                     ndoms = 0
-                
-            except:
-                chopping = 'NO_SS'
+
+            else:
+                pdb_ss = None
+                pdb_path_chopped = None
+                chopping = 'NULL'
                 ndoms = 0
 
             # end_time = time.time() - start_time 
