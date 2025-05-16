@@ -118,10 +118,10 @@ def main():
             ))
             
             # Cleanup
-            if os.path.exists(pdb_ss):
+            if pdb_ss is not None and os.path.exists(pdb_ss):
                 os.remove(pdb_ss)
 
-            if os.path.exists(pdb_path_chopped):
+            if pdb_path_chopped is not None and os.path.exists(pdb_path_chopped):
                 os.remove(pdb_path_chopped)
     
 if __name__ == "__main__":
