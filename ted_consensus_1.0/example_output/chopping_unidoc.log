@@ -1,1 +1,53 @@
-Running unidoc on targets in /home/andy/TED_science_review/programs/test2/ted-tools/ted_consensus_1.0/example
+Running unidoc on targets in /home/a.lau/Github/ted-tools/ted_consensus_1.0/example
+Skipping processing for 1bg5A03 - chopping is NULL
+--------------------------------------------------------------
+Processing chopping for AF-A0A0N5ATQ5-F1-model_v4: 13-127,128-183_190-238,239-347,348-470
+Extracting residues 13:127,128:183,190:238,239:347,348:470 from /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A0N5ATQ5-F1-model_v4.pdb
+Successfully created chopped PDB file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A0N5ATQ5-F1-model_v4_chopped.pdb
+Running STRIDE on /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A0N5ATQ5-F1-model_v4_chopped.pdb for chain A
+Running UniDoc on /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A0N5ATQ5-F1-model_v4_chopped.pdb
+UniDoc output: 13-140_190-470,141-183
+Found 2 domains: 13-140_190-470,141-183
+Cleaned up temporary file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A0N5ATQ5-F1-model_v4.pdb.ss
+Cleaned up temporary file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A0N5ATQ5-F1-model_v4_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for AF-A0A1V6M2Y0-F1-model_v4: 96-133_197-300_349-374_400-452,453-1131,1174-1272
+Extracting residues 96:133,197:300,349:374,400:452,453:1131,1174:1272 from /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A1V6M2Y0-F1-model_v4.pdb
+Successfully created chopped PDB file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A1V6M2Y0-F1-model_v4_chopped.pdb
+Running STRIDE on /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A1V6M2Y0-F1-model_v4_chopped.pdb for chain A
+Running UniDoc on /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A1V6M2Y0-F1-model_v4_chopped.pdb
+UniDoc output: 422-556_944-1131,96-133_197-267,268-300_349-374_400-421,557-687,688-816,817-943,1174-1272
+Found 7 domains: 96-133_197-267,268-300_349-374_400-421,422-556_944-1131,557-687,688-816,817-943,1174-1272
+Cleaned up temporary file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A1V6M2Y0-F1-model_v4.pdb.ss
+Cleaned up temporary file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A1V6M2Y0-F1-model_v4_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for AF-A0A1X0B8H0-F1-model_v4: 1-213,214-506,523-686
+Extracting residues 1:213,214:506,523:686 from /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A1X0B8H0-F1-model_v4.pdb
+Successfully created chopped PDB file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A1X0B8H0-F1-model_v4_chopped.pdb
+Running STRIDE on /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A1X0B8H0-F1-model_v4_chopped.pdb for chain A
+Running UniDoc on /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A1X0B8H0-F1-model_v4_chopped.pdb
+UniDoc output: 213-506_523-686,1-49,50-105,106-159,160-212
+Found 5 domains: 1-49,50-105,106-159,160-212,213-506_523-686
+Cleaned up temporary file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A1X0B8H0-F1-model_v4.pdb.ss
+Cleaned up temporary file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A1X0B8H0-F1-model_v4_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for AF-A0A6C0L9V9-F1-model_v4: 29-142,143-421
+Extracting residues 29:142,143:421 from /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A6C0L9V9-F1-model_v4.pdb
+Successfully created chopped PDB file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A6C0L9V9-F1-model_v4_chopped.pdb
+Running STRIDE on /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A6C0L9V9-F1-model_v4_chopped.pdb for chain A
+Running UniDoc on /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A6C0L9V9-F1-model_v4_chopped.pdb
+UniDoc output: 29-136,137-228_406-421,229-276,277-337,338-405
+Found 5 domains: 29-136,137-228_406-421,229-276,277-337,338-405
+Cleaned up temporary file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A6C0L9V9-F1-model_v4.pdb.ss
+Cleaned up temporary file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A6C0L9V9-F1-model_v4_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for AF-A0A6C0LIE9-F1-model_v4: 1-276,277-304
+Extracting residues 1:276,277:304 from /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A6C0LIE9-F1-model_v4.pdb
+Successfully created chopped PDB file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A6C0LIE9-F1-model_v4_chopped.pdb
+Running STRIDE on /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A6C0LIE9-F1-model_v4_chopped.pdb for chain A
+Running UniDoc on /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A6C0LIE9-F1-model_v4_chopped.pdb
+UniDoc output: 1-28_174-270,29-100,101-173,271-304
+Found 4 domains: 1-28_174-270,29-100,101-173,271-304
+Cleaned up temporary file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A6C0LIE9-F1-model_v4.pdb.ss
+Cleaned up temporary file: /home/a.lau/Github/ted-tools/ted_consensus_1.0/example/AF-A0A6C0LIE9-F1-model_v4_chopped.pdb
+--------------------------------------------------------------
